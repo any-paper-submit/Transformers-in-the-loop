@@ -47,3 +47,16 @@ We tried to approximate the 'naturalness' of examples by a combination of measur
 With this in mind, we use the 20k sentences produced by the previous steps to build the parts of our synthetic dataset. Each of the sentences has a pluralized (not anymore singular!)  object in combination with *any*: any roads. The subject type varies in different datasets comprising our synthetic data. 
 
 Overall, sentences in all parts of our dataset vary in the type of context it instantiates (simple affirmative, negation, quantifiers of different monotonicity) -- but all sentences contain *any* in the object position in combination with a plural noun. We will manipulate the presence or absence of *any* to measure how *any* plays out with different types of environments.
+
+## Human assessment data
+
+We also include the results of our psycholinguistic experiment on human subjects. You can find the details of the experiment in the paper. 
+
+The results themselfs are provided in the file `datasets/human_assessments.tsv`, which has .tsv format with the five columns:
+  * a text of the *left* sentence
+  * a text of the *right* sentence
+  * answer (could be 'left' or right')
+  * an unique id of the participant
+  * *the grammar score* of the participant (could have a value from 0. to 1.)
+**Note:** *left* and *right* options don't corresponds to the actual position of sentences as they appeared in the test -- each time sides were randomized.
+  
