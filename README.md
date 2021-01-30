@@ -13,7 +13,7 @@ We take psycholinguistic experimental results on 'any' as our starting point and
 To run these scripts you'll need huggingface [transformers](https://github.com/huggingface/transformers) library, any version starting from 4.0.1 should work.
 There are two similar scripts, 
   * `compare_pair_by_bert.py` makes an acceptability assessment of two sentences with `any` and points to more proper, using BERT;
-  * `compare_pair_by_bert.py` does the same but using GPT-2 model.
+  * `compare_pair_by_gpt.py` does the same but using GPT-2 model.
 
 ### How can I run it?
 * Use the input file in .tsv format with two columns -- each with one of sentences to compare
