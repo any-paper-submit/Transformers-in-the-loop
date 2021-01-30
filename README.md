@@ -52,12 +52,12 @@ Overall, sentences in all parts of our dataset vary in the type of context it in
 
 We also include the results of our psycholinguistic experiment on human subjects. You can find the details of the experiment in the paper. 
 
-The results themselves are provided in the file `datasets/human_assessments.tsv`, which has .tsv format with the five columns:
-  * a text of the *left* sentence;
-  * a text of the *right* sentence;
-  * answer (could be 'left' or right');
-  * a unique id of the participant;
-  * *the grammar score* of the participant (could have a value from 0. to 1., we used only the answers of participants with the grammar score >= 0.7).
+The raw results are provided in the file `datasets/human_assessments.tsv`, which has five columns:
+  * the text of the *left* sentence;
+  * the text of the *right* sentence;
+  * the answer given by the participant (could be 'left' or right');
+  * the unique id of the participant;
+  * the participant competence score (ranging from 0. to 1.; participants with score <0.7 were filtered out).
   
-**Note:** *left* and *right* options don't correspond to the actual position of sentences as they appeared in the test -- each time sides were randomized.
+**Note:** *left* and *right* don’t correspond to the actual positions of sentences as seen by participants in the course of the study — the sentences were randomly flipped.
   
