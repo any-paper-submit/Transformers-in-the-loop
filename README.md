@@ -8,6 +8,19 @@ This is a temporary repository that will be replaced by a non-anonymous one afte
 *We re-address the question of whether pre-trained Transformer-based models like BERT and GPT-2 have access to highly abstract semantic properties of sentences -- in particular,  monotonicity. We find a new way to  probe monotonicity: via linguistic expressions sensitive to it (e.g. English 'any'). 
 We take psycholinguistic experimental results on 'any' as our starting point and replicate them with English BERT and GPT-2. We show that these models recognize monotonicity of a context surprisingly well even without fine-tuning. We also make new predictions just based on BERT metrics and confirm these predictions in a new psycholinguistic experiment.  We conclude that Transformer-based models can serve as experimental tools to uncover new knowledge about semantics of natural language.*
 
+## Code
+
+To run these scripts you'll need huggingface [transformers](https://github.com/huggingface/transformers) library, any version starting from 4.0.1 should work.
+There are two similar scripts, 
+  * `compare_pair_by_bert.py` makes an acceptability assessment of two sentences with `any` and points to more proper, using BERT;
+  * `compare_pair_by_bert.py` does the same but using GPT-2 model.
+
+### How can I run it?
+* Use the input file in .tsv format with two columns -- each with one of sentences to compare
+* Run scripts like this:
+
+```python scripts/compare_pair_by_bert.py --input_file datasets/real_positive_or_negative_with_any.tsv --output_file results.tsv``` 
+
 ## Natural data
 
 We scrapped the Gutenberg Project and a subset of English Wikipedia to obtain the list of sentences that contain *any*. Next, using a combination of heuristics, we filtered the result with regular expressions to produce two sets of sentences (the second set underwent additional manual filtration):
