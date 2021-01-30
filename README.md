@@ -59,5 +59,5 @@ The results themselfs are provided in the file `datasets/human_assessments.tsv`,
   * an unique id of the participant
   * *the grammar score* of the participant (could have a value from 0. to 1., we used only the answers of participants with the grammar score >= 0.7)
   
-**Note:** *left* and *right* options don't corresponds to the actual position of sentences as they appeared in the test -- each time sides were randomized.
+**Note:** *left* and *right* options don't correspond to the actual position of sentences as they appeared in the test -- each time sides were randomized.
   
