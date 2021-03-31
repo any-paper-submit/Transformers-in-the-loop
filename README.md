@@ -29,6 +29,14 @@ We scrapped the Gutenberg Project and a subset of English Wikipedia to obtain th
 
 The first set was modified to substitute the negated verb by its non-negated version, so we contrast 3844 sentences with negation and 3844 affirmative ones (*neg* vs. *aff*). In the second dataset, we substituted *nobody* for *somebody* and *no one* for *someone*, to check the *some* vs. *no* contrast.
 
+### How to reproduce
+
+You can use our script to find sentences with negation and *any* in any given English corpus:
+
+```python dataset_preparation/select_sentences_from_real_text.py <corpus.txt>```
+
+This script requires the `nltk` module.
+
 ## Synthetic data
 
 We used the following procedure. First, we automatically identified the set of verbs and nouns to build our items from. To do so, we started with *bert-base-uncased* vocabulary. We ran all non-subword lexical tokens through a SpaCy POS. Further, we lemmatized the result using https://pypi.org/project/Pattern/ and dropped duplicates. Then, we filtered out modal verbs, singularia tantum nouns and some visible lemmatization mistakes. Finally, we filtered out non-transitive verbs to give the dataset a bit of a higher baseline of grammaticality.
