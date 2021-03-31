@@ -56,6 +56,25 @@ With this in mind, we use the 20k sentences produced by the previous steps to bu
 
 Overall, sentences in all parts of our dataset vary in the type of context it instantiates (simple affirmative, negation, quantifiers of different monotonicity) -- but all sentences contain *any* in the object position in combination with a plural noun. We will manipulate the presence or absence of *any* to measure how *any* plays out with different types of environments.
 
+### How to reproduce
+
+You can use our scripts to generate our synthetic datasets from scratch.
+
+To do so, you'll need the following libraries installed:
+* nltk
+* textacy
+* pattern
+* spacy (with the `en_core_web_sm` model)
+* pandas
+* numpy
+* torch
+* pytorch_pretrained_bert 
+
+Here are the instructions:
+1. First, use `python generate_transitive_verbs_list.py` to re-generate the list of transitive verbs (the script will store it in `transitive-verbs.txt`).
+2. Then, use `python generate_synthetic_sentences.py` to generate a lot of sentences with their perplexity scores (it uses `transitive-verbs.txt`).
+3. Finally, use `python format_examples.py` to select the best from generated sentences and produce all our datasets.
+
 ## Human assessment data
 
 We also include the results of our psycholinguistic experiment on human subjects. You can find the details of the experiment in the paper. 
