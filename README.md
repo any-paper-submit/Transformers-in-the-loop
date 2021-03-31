@@ -23,7 +23,7 @@ There are two similar scripts,
 
 ## Natural data
 
-We scrapped the Gutenberg Project and a subset of English Wikipedia to obtain the list of sentences that contain *any*. Next, using a combination of heuristics, we filtered the result with regular expressions to produce two sets of sentences (the second set underwent additional manual filtration):
+We scraped the Gutenberg Project and a subset of English Wikipedia to obtain the list of sentences that contain *any*. Next, using a combination of heuristics, we filtered the result with regular expressions to produce two sets of sentences (the second set underwent additional manual filtration):
    * 3844 sentences with sentential negation and a plural object with *any* to the right to the verb;
    * 330 sentences with *nobody* / *no one* as subject and a plural object with *any* to the right.
 
