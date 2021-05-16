@@ -1,6 +1,6 @@
 # Transformers-in-the-loop
 
-This repo contains supplemental materials accompanying an anonymous ACL-2021 submission "Transformers in the loop: Semantic monotonicity in neural models of language". 
+This repo contains supplemental materials accompanying an anonymous submission "Transformers in the loop: Polarity in neural models of language". 
 This is a temporary repository that will be replaced by a non-anonymous one after the anonymity period expires. Detailed explanation concerning the generation and use of this dataset is contained in the main part of the submission.
 
 ## Abstract
