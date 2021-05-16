@@ -5,8 +5,7 @@ This is a temporary repository that will be replaced by a non-anonymous one afte
 
 ## Abstract
 
-*We re-address the question of whether pre-trained Transformer-based models like BERT and GPT-2 have access to highly abstract semantic properties of sentences -- in particular,  monotonicity. We find a new way to  probe monotonicity: via linguistic expressions sensitive to it (e.g. English 'any'). 
-We take psycholinguistic experimental results on 'any' as our starting point and replicate them with English BERT and GPT-2. We show that these models recognize monotonicity of a context surprisingly well even without fine-tuning. We also make new predictions just based on BERT metrics and confirm these predictions in a new psycholinguistic experiment.  We conclude that Transformer-based models can serve as experimental tools to uncover new knowledge about semantics of natural language.*
+*We re-address the question of whether pre-trained Transformer-based models like BERT and GPT-2 have access to abstract linguistic properties of sentences. As a study case, we look at the notion of polarity. We probe polarity via so-called 'negative polarity items' (in particular, English 'any'). Typically, representation of linguistic phenomena in computational language models is evaluated against the predictions of existing linguistic theories of these phenomena. We show that -- at least for polarity -- metrics derived from language models are more consistent with data from psycholinguistic experiments than with linguistic theory predictions. Establishing this allows us to more adequately evaluate the performance of language models and also to use language models to discover new insights into natural language grammar beyond existing linguistic theories. Overall, our results encourage a closer tie between experiments with human subjects and with language models. We propose methods to enable this closer tie.*
 
 ## Code
 
